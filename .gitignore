@@ -131,4 +131,5 @@ dmypy.json
 mlruns/
 .ipynb_checkpoints/
 .amlignore
+.alexignore
 train-checkpoint*
