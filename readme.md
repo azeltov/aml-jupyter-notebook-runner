@@ -32,8 +32,8 @@ dependencies:
       - ipykernel~=6.0
       - matplotlib
       - papermill==2.3.3
-name: papermill-env```
-
+name: papermill-env
+```
 This environment is used in the pipeline env sections. If you create with different name update the job.yml and pipeline.yml for demos below to work.
 
 
