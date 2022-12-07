@@ -3,9 +3,7 @@
 ![image](https://user-images.githubusercontent.com/5873303/206207142-16ef62e7-d63e-4f71-b917-3f68d410a4ee.png)
 
 
-### DEMO STEPS:
-
-Pre-req:
+## DEMO STEPS PRE-REQ:
 Create environment in AML, named papermill-env
 
 ![image](https://user-images.githubusercontent.com/5873303/206250933-e9aa6db0-8f40-4db6-a9ce-8782e542e971.png)
@@ -36,6 +34,7 @@ name: papermill-env
 ```
 This environment is used in the pipeline env sections. If you create with different name update the job.yml and pipeline.yml for demos below to work.
 
+## STEPS TO KICK OFF PIPELINE AND SCHEDULE
 
 Create a single step job that runs command: papermill -k python train.ipynb
 
