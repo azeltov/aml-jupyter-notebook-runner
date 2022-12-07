@@ -5,6 +5,38 @@
 
 ### DEMO STEPS:
 
+Pre-req:
+Create environment in AML, named papermill-env
+
+![image](https://user-images.githubusercontent.com/5873303/206249627-15b7e3e2-89f5-4b38-9c2d-5b653c4c5cf7.png)
+
+Here is a sample env that I based of docker image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:latest
+The important package is papermill==2.3.3
+
+```channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy=1.21.2
+  - pip=21.2.4
+  - scikit-learn=0.24.2
+  - scipy=1.7.1
+  - 'pandas>=1.1,<1.2'
+  - pip:
+      - 'inference-schema[numpy-support]==1.3.0'
+      - xlrd==2.0.1
+      - mlflow== 1.26.1
+      - azureml-mlflow==1.42.0
+      - 'psutil>=5.8,<5.9'
+      - 'tqdm>=4.59,<4.60'
+      - ipykernel~=6.0
+      - matplotlib
+      - papermill==2.3.3
+name: papermill-env```
+
+This environment is used in the pipeline env sections. If you create with different name update the job.yml and pipeline.yml for demos below to work.
+
+
 Create a single step job that runs command: papermill -k python train.ipynb
 
 ```az ml job create --subscription xxxx-xxxx-xxxx-xxxx --resource-group rg_aml --workspace-name aml-default --file job.yml --stream```
