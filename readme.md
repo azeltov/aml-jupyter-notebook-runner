@@ -8,7 +8,7 @@
 Pre-req:
 Create environment in AML, named papermill-env
 
-![image](https://user-images.githubusercontent.com/5873303/206249627-15b7e3e2-89f5-4b38-9c2d-5b653c4c5cf7.png)
+![image](https://user-images.githubusercontent.com/5873303/206250933-e9aa6db0-8f40-4db6-a9ce-8782e542e971.png)
 
 Here is a sample env that I based of docker image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:latest
 The important package is papermill==2.3.3
