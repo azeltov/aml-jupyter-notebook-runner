@@ -29,3 +29,7 @@ Disable the scheduled pipeline job:
 Delete the scheduled job:
 
 ```az ml schedule delete --name simple_cron_job_schedule  --subscription xxxx-xxxx-xxxx-xxxx --resource-group rg_aml --workspace-name aml-default ```
+
+
+For more details on how to use papermill:
+https://papermill.readthedocs.io/en/latest/usage-execute.html
