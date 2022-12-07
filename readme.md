@@ -1,5 +1,8 @@
 # Demo how to run and schedule jupyter notebook(s) using AMLv2 CLI pipelines and papermill command
 
+![image](https://user-images.githubusercontent.com/5873303/206203917-84bec23b-b22c-44c2-8966-24a2ec55b8d3.png)
+
+
 ### DEMO STEPS:
 
 Create a single step job that runs command: papermill -k python train.ipynb
