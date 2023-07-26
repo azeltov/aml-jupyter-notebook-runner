@@ -12,6 +12,7 @@ Here is a sample env that I based of docker image: mcr.microsoft.com/azureml/ope
 The important package is papermill==2.3.3
 
 ```channels:
+channels:
   - conda-forge
 dependencies:
   - python=3.8
